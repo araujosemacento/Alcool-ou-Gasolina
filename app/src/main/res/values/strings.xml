@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Álcool ou Gasolina?</string>
+    <string name="header">Qual combustível é mais rentável?</string>
+    <string name="alcool_label">Preço do Álcool:</string>
+    <string name="gasolina_label">Preço da Gasolina:</string>
+    <string name="switch75">75%</string>
+    <string name="switch70">70%</string>
+</resources>
