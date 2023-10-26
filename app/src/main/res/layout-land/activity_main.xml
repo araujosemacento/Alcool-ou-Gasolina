@@ -41,7 +41,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="650dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="?attr/colorPrimary"
         android:gravity="center"
@@ -100,7 +100,6 @@
             android:layout_below="@id/alcool_label"
             android:autofillHints="no"
             android:ems="12"
-            android:layout_marginVertical="25dp"
             android:hint="@string/gasolina_label"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
@@ -134,10 +133,12 @@
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/toggleSwitch"
                 style="@style/SwitchCompatTheme"
-                app:layout_constraintStart_toEndOf="@id/switch75"
-                app:layout_constraintEnd_toStartOf="@id/switch70"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/switch70"
+                app:layout_constraintStart_toEndOf="@id/switch75"
+                app:layout_constraintTop_toTopOf="parent"
                 app:useMaterialThemeColors="false" />
 
             <TextView
@@ -163,7 +164,8 @@
             android:minHeight="48dp"
             android:textAlignment="center"
             android:textColor="?attr/colorOnSecondary"
-            android:textSize="32sp"
+            android:textSize="28sp"
+            android:maxWidth="200dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
