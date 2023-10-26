@@ -5,4 +5,6 @@
     <string name="gasolina_label">Preço da Gasolina:</string>
     <string name="switch75">75%</string>
     <string name="switch70">70%</string>
+    <string name="alcohol_profitable">O álcool é mais rentável!</string>
+    <string name="gasoline_profitable">A gasolina é mais rentável!</string>
 </resources>

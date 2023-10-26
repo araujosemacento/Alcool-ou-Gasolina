@@ -33,19 +33,18 @@ class MainActivity : AppCompatActivity() {
     result.setText(sharedPreferences.getString("result", ""))
     switch.isChecked = sharedPreferences.getBoolean("switch", false)
 
-    val textWatcher = object : TextWatcher {
-      override fun afterTextChanged(s: Editable?) {
-        calculate()
-      }
+    val textWatcher =
+        object : TextWatcher {
+          override fun afterTextChanged(s: Editable?) {
+            calculate()
+          }
 
-      override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+          override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
-      override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-    }
+          override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        }
 
-    switch.setOnCheckedChangeListener { _, _ ->
-      calculate()
-    }
+    switch.setOnCheckedChangeListener { _, _ -> calculate() }
 
     alcoholPrice.addTextChangedListener(textWatcher)
     gasolinePrice.addTextChangedListener(textWatcher)
@@ -81,7 +80,8 @@ class MainActivity : AppCompatActivity() {
     if (alcohol != null && gasoline != null) {
       val ratio = if (switch.isChecked) 0.7 else 0.75
       result.text =
-        if (alcohol <= gasoline * ratio) "O álcool é mais rentável!" else "A gasolina é mais rentável!"
+          if (alcohol <= gasoline * ratio) getString(R.string.alcohol_profitable)
+          else getString(R.string.gasoline_profitable)
     }
   }
 }

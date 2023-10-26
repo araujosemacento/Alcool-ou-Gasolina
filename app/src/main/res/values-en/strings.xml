@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alcohol or Gasoline?</string>
+    <string name="header">Which fuel is more profitable?</string>
+    <string name="alcool_label">Alcohol Price:</string>
+    <string name="gasolina_label">Gasoline Price:</string>
+    <string name="switch75">75%</string>
+    <string name="switch70">70%</string>
+    <string name="alcohol_profitable">Alcohol is more profitable!</string>
+    <string name="gasoline_profitable">Gasoline is more profitable!</string>
+</resources>
